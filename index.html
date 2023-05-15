@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>computer science</title>
+    <meta name="DCS" http-equiv="refresh" content="5"> 
+    <!-- refresh automatically after 5 second -->
+    <style type="text/css">
+        /* *{ 
+            color:red;
+        } */
+        h1{
+            color: rgb(211, 71, 71);
+        }
+
+        p strong{
+            background-color: red;
+            color: white;
+        }
+
+        div strong{
+            background-color: red;
+            color: white;
+        }
+
+        div>p{
+            background-color: black;
+            color: white;
+        }
+
+        h1+h3{
+            background-color: rgb(243, 196, 135);
+        }
+
+        em~p{
+            background-color: aqua;
+        }
+
+        .exp{
+            color:blueviolet;
+        }
+
+        .exh{
+            color:red;
+            background-color: yellow;
+            width: 500px;
+            text-align: center;
+            margin:0 auto;
+            padding: 10px 20px;
+        }
+        #my_id{
+            color:white;
+        }
+
+        input[type="text"]{
+            background-color: purple;
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="mystyle.css">
+    
+</head>
+<body>
+    <h1>Department of Computer Science</h1>
+    
+    
+    <p style="color:blue;">Lorem ipsum dolor sit amet consectetur <strong>Computer Science</strong> elit. Necessitatibus dolor dignissimos fugiat molestiae in harum atque, accusamus possimus voluptatum a, sint quis neque iste? Expedita placeat, nihil omnis suscipit perspiciatis ipsum ut quo et, ratione corrupti voluptas inventore qui, laboriosam consequuntur ea reprehenderit ducimus praesentium explicabo provident accusamus recusandae? Ab!</p>
+    <hr>
+
+     <!-- ************************************************************* -->
+     
+     <h2>Direct child(>)</h2>
+    <div>
+        <p>
+            Web technology
+        </p>
+    </div>
+
+    <div>
+        <p>Level-2S</p>
+        <div>
+            <p>Web technology</p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p>Level-2S</p>
+        <span>
+            <p class="exp">Web technology</p>
+        </span>
+    </div>
+
+
+    <!-- ************************************************************* -->
+    <hr>
+    <h2>Decendent selector(" ")</h2>
+    <div>
+        <strong>Level-2S</strong>
+        <div>
+            <span>
+                <strong>Computer Science</strong>
+            </span>
+        </div>
+    </div>
+    <p>
+        <strong>Level-2S</strong>
+        <span><strong>Computer</strong>Science</span>
+        <strong>Web technology</strong>
+    </p>
+
+    <!-- ************************************************************* -->
+     <hr>
+    <h2>Adjacent Sibling Selectors(+)</h2>
+    <!-- only direct siblings /only imidiate after -->
+    <h1 class="exh">Example</h1>
+    <h3>Result</h3>
+    <h3>Result</h3> <!-- not a adjacent sibling -->
+
+    <!-- ************************************************************* -->
+    <hr>
+    <h2>General Sibling Selectors(~)</h2>
+    <!-- all element after that will change if both under same parent -->
+    <p>Lorem ipsum dolor sit amet.</p><!--only after the em -->
+    <em>example:</em>
+    <span>althaf<p>ahamed</p></span><!--not this p will change because not inside same parent-->
+    <p id="my_id">Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+    <!-- ************************************************************* -->
+    <hr>
+    <h2>Attribute selector (input[type="text"])</h2>
+    <label for="fname">First Name: </label>
+    <input type="text" id="fname">
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+body{
+    background-color:antiquewhite;
+}
+
+
+
+/* 
+
+*  universal selector
+space( )   descendent selector //apply for all element within it not only the direct child
+
+child (>) direct child only
+*/
+
+
+hr{
+    border: 6px rgb(185, 96, 96) dotted;
+    border-bottom: none;
+    width: 30px;
+}
+
+h2{
+    text-align: center;
+    
+}
